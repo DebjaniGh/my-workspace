@@ -1,5 +1,13 @@
 # MyWorkspace
 
+This is a reusable UI library (under projects/dg-ui-library) using Angular. Any ANgular application can use this library without building the UI elements from scratch.
+
+First commit: Buttons is the first component to be built. Please see image below:
+
+![image](https://github.com/user-attachments/assets/9fc9212d-097a-476d-b7f9-561d13715608)
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
