@@ -1,0 +1,13 @@
+<button
+  [type]="type"
+  [disabled]="disabled"
+  class="ui-btn"
+  [ngClass]="{
+    disabled: disabled,
+    primary: variant === 'primary',
+    secondary: variant === 'secondary',
+    outline: variant === 'outline'
+  }"
+>
+  {{ label }}
+</button>

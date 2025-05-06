@@ -1,0 +1,9 @@
+<h3>{{ title }}</h3>
+
+<div class="btn-container" *ngFor="let item of buttonArr">
+  <lib-button
+    [label]="item.label"
+    [type]="item.type"
+    [variant]="item.variant"
+  ></lib-button>
+</div>
