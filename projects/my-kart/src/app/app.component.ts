@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from 'dg-ui-library';
+import { ButtonComponent, IconButtonComponent } from 'dg-ui-library';
 import { btnType } from './model/btn.interface';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ButtonComponent, CommonModule],
+  imports: [ButtonComponent, IconButtonComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

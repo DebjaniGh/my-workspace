@@ -5,3 +5,4 @@
 export * from './lib/dg-ui-library.service';
 export * from './lib/dg-ui-library.component';
 export * from './lib/atoms/button/button.component';
+export * from './lib/atoms/icon-button/icon-button.component';

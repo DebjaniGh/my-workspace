@@ -2,3 +2,11 @@
   display: inline-block;
   margin-right: 1rem;
 }
+
+.icon-btn {
+  padding: 0.5rem;
+}
+
+.icon-container {
+  padding-top: 2rem;
+}
