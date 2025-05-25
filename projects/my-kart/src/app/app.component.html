@@ -1,26 +1,35 @@
-<h3>{{ title }}</h3>
+<div style="padding: 2rem">
+  <div class="btn-container" *ngFor="let item of buttonArr">
+    <lib-button
+      [label]="item.label"
+      [type]="item.type"
+      [variant]="item.variant"
+    ></lib-button>
+  </div>
 
-<div class="btn-container" *ngFor="let item of buttonArr">
-  <lib-button
-    [label]="item.label"
-    [type]="item.type"
-    [variant]="item.variant"
-  ></lib-button>
-</div>
+  <div class="icon-container">
+    <lib-icon-button
+      class="icon-btn"
+      icon="fas fa-save"
+      label="3"
+      type="primary"
+    >
+    </lib-icon-button>
+    <lib-icon-button class="icon-btn" icon="fas fa-times" type="secondary">
+    </lib-icon-button>
+    <lib-icon-button class="icon-btn" icon="fas fa-trash" type="danger">
+    </lib-icon-button>
+    <lib-icon-button class="icon-btn" icon="fas fa-check" type="success">
+    </lib-icon-button>
+    <lib-icon-button
+      class="icon-btn"
+      icon="fas fa-exclamation-triangle"
+      type="warning"
+    >
+    </lib-icon-button>
+  </div>
 
-<div class="icon-container">
-  <lib-icon-button class="icon-btn" icon="fas fa-save" label="3" type="primary">
-  </lib-icon-button>
-  <lib-icon-button class="icon-btn" icon="fas fa-times" type="secondary">
-  </lib-icon-button>
-  <lib-icon-button class="icon-btn" icon="fas fa-trash" type="danger">
-  </lib-icon-button>
-  <lib-icon-button class="icon-btn" icon="fas fa-check" type="success">
-  </lib-icon-button>
-  <lib-icon-button
-    class="icon-btn"
-    icon="fas fa-exclamation-triangle"
-    type="warning"
-  >
-  </lib-icon-button>
+  <div class="search-bar">
+    <lib-search-bar placeholder="What are you looking for?"></lib-search-bar>
+  </div>
 </div>
