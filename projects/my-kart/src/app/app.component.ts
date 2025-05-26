@@ -4,9 +4,13 @@ import {
   IconButtonComponent,
   SearchBarComponent,
   LogoComponent,
+  NavItem,
 } from 'dg-ui-library';
 import { btnType } from './model/btn.interface';
 import { CommonModule } from '@angular/common';
+import { HorizontalNavComponent } from '../../../dg-ui-library/src/lib/atoms/horizontal-nav/horizontal-nav.component';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +21,8 @@ import { CommonModule } from '@angular/common';
     SearchBarComponent,
     CommonModule,
     LogoComponent,
+    HorizontalNavComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -32,4 +38,18 @@ export class AppComponent {
 
   imgLogo = './assets/images/bird_2.jpg';
   brandName = 'My Kart';
+  navItems: NavItem[] = [
+    { label: 'Home', route: '/home' },
+    { label: 'Contact Us', route: '/contact' },
+    { label: 'Sign Up', route: '/signup' },
+  ];
+
+  currentRoute = '';
+  constructor(private router: Router) {
+    this.router.events
+      .pipe(filter((event: any) => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        this.currentRoute = event.urlAfterRedirects;
+      });
+  }
 }

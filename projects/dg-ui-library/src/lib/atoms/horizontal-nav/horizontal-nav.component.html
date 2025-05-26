@@ -1,0 +1,9 @@
+<nav class="horizontal-nav">
+  <a
+    *ngFor="let item of navItems"
+    [routerLink]="item.route"
+    class="nav-link"
+    [class.active]="activeRoute === item.route"
+    >{{ item.label }}</a
+  >
+</nav>

@@ -37,4 +37,10 @@
     logoPath="./assets/images/bird_2.jpg"
     brandName="My Kart"
   ></lib-logo>
+
+  <lib-horizontal-nav
+    [navItems]="navItems"
+    [activeRoute]="currentRoute"
+  ></lib-horizontal-nav>
+  <router-outlet></router-outlet>
 </div>
