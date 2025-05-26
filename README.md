@@ -12,6 +12,12 @@ Latest commit: 25th May, 2025 - Implementation of icon-buttons and search-bar. P
 ![output of ui library - buttonsc icon-buttons, search bar](https://github.com/user-attachments/assets/79c2955f-1e52-45b4-9508-d252c31fc5fd)
 
 
+Latest commit: 26th May, 2025 - Implementation of brand logo with name component. Please see image below:
+![output of ui library - logo with name](https://github.com/user-attachments/assets/adaeb6ea-25b2-41df-8cba-6c207116e45f)
+
+
+To build library after making code changes, run ng build <library-name>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
