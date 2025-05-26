@@ -1,0 +1,16 @@
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem;
+}
+
+.brand-logo {
+  width: 5rem;
+  height: auto;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 24px;
+}

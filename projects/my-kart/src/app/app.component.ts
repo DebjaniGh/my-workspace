@@ -3,6 +3,7 @@ import {
   ButtonComponent,
   IconButtonComponent,
   SearchBarComponent,
+  LogoComponent,
 } from 'dg-ui-library';
 import { btnType } from './model/btn.interface';
 import { CommonModule } from '@angular/common';
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
     IconButtonComponent,
     SearchBarComponent,
     CommonModule,
+    LogoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -27,4 +29,7 @@ export class AppComponent {
     { label: 'Click me', type: 'button', variant: 'secondary' },
     { label: 'Click me', type: 'button', variant: 'outline' },
   ];
+
+  imgLogo = './assets/images/bird_2.jpg';
+  brandName = 'My Kart';
 }
