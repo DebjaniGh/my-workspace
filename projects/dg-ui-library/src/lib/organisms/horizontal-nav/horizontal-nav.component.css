@@ -12,12 +12,12 @@
     transition: background 0.3s;
   }
 
-  &:hover {
-    background: #e2e6ea;
+  .nav-link:hover {
+    background: #b5d4f3;
   }
 
-  &.active {
-    background: #007bff;
-    color: white;
+  .nav-link.active {
+    font-weight: bold;
+    color: rgb(22, 20, 20);
   }
 }

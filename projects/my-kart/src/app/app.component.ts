@@ -8,7 +8,7 @@ import {
 } from 'dg-ui-library';
 import { btnType } from './model/btn.interface';
 import { CommonModule } from '@angular/common';
-import { HorizontalNavComponent } from '../../../dg-ui-library/src/lib/atoms/horizontal-nav/horizontal-nav.component';
+import { HorizontalNavComponent } from '../../../dg-ui-library/src/lib/organisms/horizontal-nav/horizontal-nav.component';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
 
