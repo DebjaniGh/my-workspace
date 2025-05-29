@@ -1,0 +1,37 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "dg-ui-library",
+  "projectType": "library",
+  "sourceRoot": "projects/dg-ui-library/src",
+  "prefix": "lib",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:ng-packagr",
+      "options": {
+        "project": "projects/dg-ui-library/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "projects/dg-ui-library/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "projects/dg-ui-library/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": [
+        "{workspaceRoot}/dist/dg-ui-library"
+      ]
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "tsConfig": "projects/dg-ui-library/tsconfig.spec.json",
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ]
+      }
+    }
+  }
+}
