@@ -1,0 +1,11 @@
+<div class="star-rating">
+  <span
+    *ngFor="let filled of stars; let i = index"
+    (click)="setRating(i)"
+    (mouseenter)="onHover(i)"
+    (mouseleave)="resetStars()"
+    [class.filled]="filled"
+  >
+    &#9733;
+  </span>
+</div>

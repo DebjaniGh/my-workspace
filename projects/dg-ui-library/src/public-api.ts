@@ -9,3 +9,4 @@ export * from './lib/atoms/icon-button/icon-button.component';
 export * from './lib/atoms/search-bar/search-bar.component';
 export * from './lib/atoms/logo/logo.component';
 export * from './lib/organisms/horizontal-nav/horizontal-nav.component';
+export * from './lib/molecules/star-rating/star-rating.component';

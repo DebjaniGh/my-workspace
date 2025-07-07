@@ -1,13 +1,13 @@
 <div style="padding: 2rem">
-  <div class="btn-container" *ngFor="let item of buttonArr">
+  <!-- <div class="btn-container" *ngFor="let item of buttonArr">
     <lib-button
       [label]="item.label"
       [type]="item.type"
       [variant]="item.variant"
     ></lib-button>
-  </div>
+  </div> -->
 
-  <div class="icon-container">
+  <!-- <div class="icon-container">
     <lib-icon-button
       class="icon-btn"
       icon="fas fa-save"
@@ -27,20 +27,12 @@
       type="warning"
     >
     </lib-icon-button>
-  </div>
-
-  <div class="search-bar">
-    <lib-search-bar placeholder="What are you looking for?"></lib-search-bar>
-  </div>
-
-  <lib-logo
-    logoPath="./assets/images/bird_2.jpg"
-    brandName="My Kart"
-  ></lib-logo>
-
-  <lib-horizontal-nav
-    [navItems]="navItems"
-    [activeRoute]="currentRoute"
-  ></lib-horizontal-nav>
+  </div> -->
+  <app-header></app-header>
+  <lib-star-rating
+    [maxStars]="5"
+    [rating]="3"
+    (ratingChange)="onRatingChange($event)"
+  ></lib-star-rating>
   <router-outlet></router-outlet>
 </div>
