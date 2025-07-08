@@ -15,8 +15,12 @@ Latest commit: 25th May, 2025 - Implementation of icon-buttons and search-bar. P
 Latest commit: 26th May, 2025 - Implementation of brand logo with name component. Please see image below:
 ![output of ui library - logo with name](https://github.com/user-attachments/assets/adaeb6ea-25b2-41df-8cba-6c207116e45f)
 
+Star-rating component and accordion component demo:
+https://github.com/user-attachments/assets/9d3fba99-cd52-4f22-8bbb-49a5a83560a7
 
-To build library after making code changes, run ng build <library-name>
+
+
+To build library after making code changes, run ng build library-name
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
