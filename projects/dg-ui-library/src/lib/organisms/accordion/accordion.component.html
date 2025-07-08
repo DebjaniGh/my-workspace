@@ -1,0 +1,11 @@
+<div class="accordion">
+  <div *ngFor="let section of sections; let i = index" class="accordion-item">
+    <button (click)="toggleSection(i)" class="accordion-header">
+      <span class="chevron">{{ section.isOpen ? "▼" : "►" }}</span>
+      <span class="title">{{ section.title }}</span>
+    </button>
+    <div class="accordion-content" *ngIf="section.isOpen">
+      {{ section.content }}
+    </div>
+  </div>
+</div>
